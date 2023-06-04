@@ -1,13 +1,14 @@
 import React from "react";
 import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container, Button } from "@material-ui/core";
 import {PhotoCamera} from '@material-ui/icons';
+import useStyles from "./styles";
 const App = () => {
     return (
         <>
             <CssBaseline />
             <AppBar position="relative">
                 <Toolbar>
-                    <PhotoCamera/>
+                    <PhotoCamera className={classes.icon}/>
                     <Typography variant="h6">
                         Photo Album
                     </Typography>
@@ -26,12 +27,12 @@ const App = () => {
                         <div>
                             <Grid container spacing={2} justifyContent="center">
                                  <Grid item >
-                                    <Button variant="contained" color="primary">
+                                    <Button variant="contained" color="primary" >
                                         Primary Action
                                     </Button>
                                  </Grid>
                                  <Grid item >
-                                    <Button variant="outlined" color="primary">
+                                    <Button variant="outlined" color="primary" >
                                         Secondary Action
                                     </Button>
                                  </Grid>
